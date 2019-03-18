@@ -21,7 +21,6 @@ import org.springframework.util.DigestUtils;
 import java.util.Date;
 import java.util.List;
 
-//@Component  @Service  @Dao   @Controller
 @Service
 public class SeckillServiceImpl implements SeckillService {
 
@@ -80,6 +79,7 @@ public class SeckillServiceImpl implements SeckillService {
     }
 
     @Override
+
     @Transactional
     // 秒杀是否成功，成功:减库存，增加明细；失败:抛出异常，事务回滚
     /**
@@ -124,4 +124,5 @@ public class SeckillServiceImpl implements SeckillService {
             throw new SeckillException("seckill inner error :" + e.getMessage());
         }
     }
+
 }
