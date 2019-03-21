@@ -16,7 +16,7 @@
 
 
 
-##开发工具
+## 开发工具
 
 IntelliJ IDEA + MySQL + Git + Chrome
 
@@ -30,4 +30,8 @@ IntelliJ IDEA + MySQL + Git + Chrome
 |     Maven     |   3.6.0   |
 |     MySQL     |  5.7.21   |
 |     Redis     |  3.2.100  |
+
+
+
+**后续更新**。
 
