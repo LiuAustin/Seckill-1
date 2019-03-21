@@ -8,7 +8,6 @@ import com.seckill.entity.Seckill;
 import com.seckill.enums.SeckillStatEnum;
 import com.seckill.exception.RepeatKillException;
 import com.seckill.exception.SeckillCloseException;
-import com.seckill.exception.SeckillException;
 import com.seckill.service.SeckillService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

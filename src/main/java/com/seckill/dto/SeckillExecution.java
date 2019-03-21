@@ -33,19 +33,7 @@ public class SeckillExecution {
         this.stateInfo = statEnum.getInfo();
     }
 
- /*   public SeckillExecution(long seckillId, int state, String stateInfo, SuccessKilled successKilled) {
-        this.seckillId = seckillId;
-        this.state = state;
-        this.stateInfo = stateInfo;
-        this.successKilled = successKilled;
-    }
 
-
-    public SeckillExecution(long seckillId, int state, String stateInfo) {
-        this.seckillId = seckillId;
-        this.state = state;
-        this.stateInfo = stateInfo;
-    }*/
 
     public long getSeckillId() {
         return seckillId;
