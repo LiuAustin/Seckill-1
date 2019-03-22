@@ -27,14 +27,6 @@
 
 [![A3CsnH.gif](https://s2.ax1x.com/2019/03/21/A3CsnH.gif)](https://imgchr.com/i/A3CsnH)
 
-**业务流程图：**
-
-
-
-![A3XBfe.png](https://s2.ax1x.com/2019/03/22/A3XBfe.png)
-
-
-
 ## 开发技术
 
 + 前端技术 ：Bootstrap + jQuery 
