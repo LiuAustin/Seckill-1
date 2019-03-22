@@ -3,19 +3,12 @@
 ## 项目介绍
 
 ![plateform](https://img.shields.io/badge/plateform-windows-lightgrey.svg) 
-
-![IntelliJ IDEA](https://img.shields.io/badge/IntelliJ%20IDEA-2018.2.7-red.svg) 
-
-![IntelliJ IDEA](https://img.shields.io/badge/JDK-1.8.0_121-#9A32CD.svg) 
-
+![IntelliJ IDEA](https://img.shields.io/badge/IntelliJ%20IDEA-2018.2.7-8B0000.svg) 
+![JDK](https://img.shields.io/badge/JDK-1.8.0_121-3A5FCD.svg) 
 ![Maven](https://img.shields.io/badge/Maven-3.6.0-ff69b4.svg) 
-
-![MySQL](https://img.shields.io/badge/MySQL-5.7.21-#ADD8E6.svg) 
-
-![Redis](https://img.shields.io/badge/Redis-3.2.100-#ADD8E6.svg) 
-
+![MySQL](https://img.shields.io/badge/MySQL-5.7.21-20B2AA.svg) 
+![Redis](https://img.shields.io/badge/Redis-3.2.100-20B2AA.svg) 
 ![SSM](https://img.shields.io/badge/SSM-framework-brightgreen.svg) 
-
 ![build](https://img.shields.io/badge/build-passing-brightgreen.svg) 
 
 本项目是使用SSM框架开发的高并发限时秒杀web应用。
