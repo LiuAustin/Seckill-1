@@ -1,4 +1,4 @@
-# SecKill
+# Seckill
 
 ![AJMSv4.png](https://s2.ax1x.com/2019/03/23/AJMSv4.png)
 
