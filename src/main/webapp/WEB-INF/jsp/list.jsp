@@ -6,6 +6,10 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@page contentType="text/html; charset=UTF-8" language="java" %>
+<%
+    String path = request.getContextPath();
+    String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + path + "/";
+%>
 <%@include file="common/tag.jsp"%>
 <!DOCTYPE html>
 <html>
@@ -13,7 +17,7 @@
     <title>秒杀商品列表</title>
     <%@include file="common/head.jsp" %>
 </head>
-<body>
+<body background="<%=basePath%>images/ms30.png">
 <div class="container">
     <div class="panel panel-default">
         <div class="panel-heading text-center">
@@ -35,6 +39,7 @@
                 <c:forEach items="${list}" var="sk">
                     <tr>
                         <td>${sk.name}</td>
+
                         <td>${sk.number}</td>
                         <td>
                             <fmt:formatDate value="${sk.startTime}" pattern="yyyy-MM-dd HH:mm:ss" />
@@ -45,7 +50,7 @@
                         <td>
                             <fmt:formatDate value="${sk.createTime}" pattern="yyyy-MM-dd HH:mm:ss" />
                         </td>
-                        <td><a class="btn btn-info" href="${pageContext.request.contextPath }/seckill/${sk.seckillId}/detail" target="_blank">详情</a></td>
+                        <td><a class="btn btn-info" href="${pageContext.request.contextPath }/seckill/${sk.seckillId}/detail" target="_blank">链接</a></td>
                     </tr>
                 </c:forEach>
                 </tbody>
@@ -60,5 +65,6 @@
 
 <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
 <script src="http://apps.bdimg.com/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
 </body>
 </html>

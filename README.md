@@ -60,7 +60,7 @@ IntelliJ IDEA + MySQL + Git + Chrome
 2. 打开IDEA --> File --> New --> Open
 3. 项目导入后，打开 Project Settings -->Project 设置 Project SDK (本项目JDK版本需在1.8以上)
 4. 打开File --> Settings --> Build,Execution,Deployment -->Maven 配置maven相关信息
-5. 在 sql 包下，执行 seckill.sql 与 execute_seckill.sql，建立数据库，然后找到 jdbc.properties 文件修改username and password
+5. 在 sql 包下，执行 seckill.sql 与 execute_seckill.sql，建立数据库，然后找到 jdbc.properties 文件修改    username and password
 
 **项目启动过程：**
 
