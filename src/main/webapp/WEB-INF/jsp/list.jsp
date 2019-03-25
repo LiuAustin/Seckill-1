@@ -10,7 +10,7 @@
     String path = request.getContextPath();
     String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + path + "/";
 %>
-<%@include file="common/tag.jsp"%>
+<%@include file="common/tag.jsp" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -42,15 +42,17 @@
 
                         <td>${sk.number}</td>
                         <td>
-                            <fmt:formatDate value="${sk.startTime}" pattern="yyyy-MM-dd HH:mm:ss" />
+                            <fmt:formatDate value="${sk.startTime}" pattern="yyyy-MM-dd HH:mm:ss"/>
                         </td>
                         <td>
-                            <fmt:formatDate value="${sk.endTime}" pattern="yyyy-MM-dd HH:mm:ss" />
+                            <fmt:formatDate value="${sk.endTime}" pattern="yyyy-MM-dd HH:mm:ss"/>
                         </td>
                         <td>
-                            <fmt:formatDate value="${sk.createTime}" pattern="yyyy-MM-dd HH:mm:ss" />
+                            <fmt:formatDate value="${sk.createTime}" pattern="yyyy-MM-dd HH:mm:ss"/>
                         </td>
-                        <td><a class="btn btn-info" href="${pageContext.request.contextPath }/seckill/${sk.seckillId}/detail" target="_blank">链接</a></td>
+                        <td><a class="btn btn-info"
+                               href="${pageContext.request.contextPath }/seckill/${sk.seckillId}/detail"
+                               target="_blank">链接</a></td>
                     </tr>
                 </c:forEach>
                 </tbody>

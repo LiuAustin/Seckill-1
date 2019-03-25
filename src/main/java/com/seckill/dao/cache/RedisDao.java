@@ -43,7 +43,7 @@ public class RedisDao {
                 jedis.close();
             }
         } catch (Exception e) {
-            logger.error(e.getMessage(),e);
+            logger.error(e.getMessage(), e);
         }
         return null;
     }
@@ -56,7 +56,7 @@ public class RedisDao {
                 byte[] bytes = ProtostuffIOUtil.toByteArray(seckill, schema,
                         LinkedBuffer.allocate(LinkedBuffer.DEFAULT_BUFFER_SIZE));
                 // 超时缓存
-                int timeout = 60 ;// 1 min
+                int timeout = 60;// 1 min
                 String result = jedis.setex(key.getBytes(), timeout, bytes);
 
                 return result;

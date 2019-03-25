@@ -12,17 +12,16 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
-import org.springframework.transaction.annotation.Transactional;
+
 
 import java.util.List;
 
-import static org.junit.Assert.*;
 
 
 @RunWith(SpringJUnit4ClassRunner.class)
 // 告诉junit spring的配置文件
-@ContextConfiguration({ "classpath:spring/spring-dao.xml",
-        "classpath:spring/spring-service.xml" })
+@ContextConfiguration({"classpath:spring/spring-dao.xml",
+        "classpath:spring/spring-service.xml"})
 public class SeckillServiceTest {
 
 
@@ -74,7 +73,6 @@ public class SeckillServiceTest {
     }*/
 
 
-
     // 集成测试代码完整逻辑，注意可重复执行
     @Test
     public void testSeckillLogic() throws Exception {
@@ -100,7 +98,7 @@ public class SeckillServiceTest {
     }
 
     @Test
-    public void executeSeckillProcedure(){
+    public void executeSeckillProcedure() {
         long seckillId = 1007;
         long phone = 13680115101L;
         Exposer exposer = seckillService.exportSeckillUrl(seckillId);

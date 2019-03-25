@@ -9,9 +9,10 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import javax.annotation.Resource;
 
 import static org.junit.Assert.*;
+
 @RunWith(SpringJUnit4ClassRunner.class)
 // 告诉junit spring的配置文件
-@ContextConfiguration({ "classpath:spring/spring-dao.xml" })
+@ContextConfiguration({"classpath:spring/spring-dao.xml"})
 public class SuccessKilledDaoTest {
 
     @Resource

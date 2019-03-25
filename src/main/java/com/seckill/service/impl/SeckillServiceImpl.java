@@ -127,13 +127,13 @@ public class SeckillServiceImpl implements SeckillService {
             if (insertCount <= 0) {
                 //重复秒杀
                 throw new RepeatKillException("seckill repeated");
-            }else{
-            // 减库存，热点商品竞争
-            int updateCount = seckillDao.reduceNumber(seckillId, nowTime);
-            if (updateCount <= 0) {
-                // 没有更新库存记录，说明秒杀结束 rollback
-                throw new SeckillCloseException("seckill is closed");
             } else {
+                // 减库存，热点商品竞争
+                int updateCount = seckillDao.reduceNumber(seckillId, nowTime);
+                if (updateCount <= 0) {
+                    // 没有更新库存记录，说明秒杀结束 rollback
+                    throw new SeckillCloseException("seckill is closed");
+                } else {
                     // 秒杀成功,得到成功插入的明细记录,并返回成功秒杀的信息 commit
                     SuccessKilled successKilled = successKilledDao.queryByIdWithSeckill(seckillId, userPhone);
                     return new SeckillExecution(seckillId, SeckillStatEnum.SUCCESS, successKilled);
@@ -172,9 +172,9 @@ public class SeckillServiceImpl implements SeckillService {
             } else {
                 return new SeckillExecution(seckillId, SeckillStatEnum.stateOf(result));
             }
-        }catch (Exception e){
-            logger.error(e.getMessage(),e);
-            return new SeckillExecution(seckillId,SeckillStatEnum.INNER_ERROR);
+        } catch (Exception e) {
+            logger.error(e.getMessage(), e);
+            return new SeckillExecution(seckillId, SeckillStatEnum.INNER_ERROR);
 
         }
     }

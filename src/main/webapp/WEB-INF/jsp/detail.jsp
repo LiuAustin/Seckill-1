@@ -78,7 +78,7 @@
 <script src="${pageContext.request.contextPath}/resources/js/seckill.js"></script>
 
 <script type="text/javascript">
-    jQuery(function() {
+    jQuery(function () {
         //使用EL表达式传入参数
         seckill.detail.init({
             seckillId:${seckill.seckillId},
